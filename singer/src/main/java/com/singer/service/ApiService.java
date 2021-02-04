@@ -6,6 +6,10 @@ import com.singer.model.ProductFilter;
 
 import java.util.List;
 
+/**
+ * @author thilinamullewidane
+ */
+
 public interface ApiService {
     List<Product> getProductList(List<ProductFilter> productFilter);
 }

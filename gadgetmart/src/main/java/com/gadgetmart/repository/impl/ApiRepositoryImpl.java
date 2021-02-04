@@ -1,5 +1,6 @@
 package com.gadgetmart.repository.impl;
 
+import com.gadgetmart.model.Order;
 import com.gadgetmart.model.Product;
 import com.gadgetmart.model.ProductFilter;
 import com.gadgetmart.repository.ApiRepository;
@@ -9,6 +10,10 @@ import org.springframework.stereotype.Repository;
 
 import java.util.Collections;
 import java.util.List;
+
+/**
+ * @author thilinamullewidane
+ */
 
 @Repository
 public class ApiRepositoryImpl implements ApiRepository {
@@ -31,4 +36,20 @@ public class ApiRepositoryImpl implements ApiRepository {
                     return product;
                 });
     }
+
+    @Override
+    public List<Order> getOrderList(String type) {
+
+        StringBuilder orderList = new StringBuilder("select * from orders");
+
+        return namedParameterJdbcTemplate.query(
+                orderList.toString(),
+                Collections.emptyMap(),
+                (rs, i) -> {
+                    Order order = new Order();
+//                    product.setProductId(rs.getInt("PRODUCT_ID"));
+                    return order;
+                });
+    }
+
 }

@@ -6,5 +6,11 @@ application:
       password:
 
 
+  api:
+    getAbansProductList: http://localhost:7043/api/get-product-list
+    getSoftlogicProductList: http://localhost:7041/api/get-product-list
+    getSingerProductList: http://localhost:7044/api/get-product-list
+
+
 
 

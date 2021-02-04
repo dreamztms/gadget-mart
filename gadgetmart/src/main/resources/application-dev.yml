@@ -5,3 +5,9 @@ application:
       username: root
       password: 12345678
 
+
+  api:
+    getAbansProductList : http://localhost:7043/get-product-list
+    getSoftlogicProductList : http://localhost:7041/get-product-list
+    getSingerProductList : http://localhost:7044/get-product-list
+

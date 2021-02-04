@@ -11,6 +11,10 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * @author thilinamullewidane
+ */
+
 @CrossOrigin
 @RestController
 @RequestMapping(value = "/")
@@ -21,7 +25,7 @@ public class ApiController {
 
     @PostMapping("/get-product-list")
     public ResponseEntity<List<Product>> getProductList(@RequestBody List<ProductFilter> productFilter) {
-        return new ResponseEntity<List<Product>>(apiService.getProductList(productFilter), HttpStatus.OK);
+        return new ResponseEntity<>(apiService.getProductList(productFilter), HttpStatus.OK);
 
     }
 }
