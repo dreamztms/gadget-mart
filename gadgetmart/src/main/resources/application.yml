@@ -15,7 +15,7 @@ logging:
 
 server:
   port: 7042
-  context-path: /api
+  context-path: /gadget-mart
 
 
 eureka:

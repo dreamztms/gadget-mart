@@ -1,9 +1,9 @@
 application:
   datasource:
-    abacus:
+    defaultDB:
       url: jdbc:mysql://localhost:3306/gadget-mart
       username: root
-      password:
+      password: 12345678
 
 
   api:

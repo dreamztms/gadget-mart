@@ -29,9 +29,9 @@ public class DataSourceConfiguration {
     @Primary
     public DataSource dataSource() {
         HikariConfig hikariConfig = new HikariConfig();
-        hikariConfig.setJdbcUrl(dbProperties.getAbacus().getUrl());
-        hikariConfig.setUsername(dbProperties.getAbacus().getUsername());
-        hikariConfig.setPassword(dbProperties.getAbacus().getPassword());
+        hikariConfig.setJdbcUrl(dbProperties.getDefaultDB().getUrl());
+        hikariConfig.setUsername(dbProperties.getDefaultDB().getUsername());
+        hikariConfig.setPassword(dbProperties.getDefaultDB().getPassword());
         dataSource = new HikariDataSource(hikariConfig);
         return dataSource;
     }

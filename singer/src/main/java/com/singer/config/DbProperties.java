@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 @ConfigurationProperties(prefix = "application.datasource")
 public class DbProperties {
 
-    private DefaultDB abacus;
+    private DefaultDB defaultDB;
 
 
 }

@@ -81,10 +81,6 @@ public class ApiServiceImpl implements ApiService {
         return response;
     }
 
-    @Override
-    public List<Order> getOrderList(String type) {
-        return apiRepository.getOrderList(type);
-    }
 
     private URI getApiUrl(String type){
         if(type.equals("abans")){

@@ -18,7 +18,7 @@ import java.util.List;
 
 @CrossOrigin
 @RestController
-@RequestMapping(value = "/")
+@RequestMapping(value = "/api")
 public class ApiController {
 
     @Autowired
@@ -28,13 +28,5 @@ public class ApiController {
     public ResponseEntity<ProductList> getProductList(@RequestBody List<ProductFilter> productFilter) throws IllegalAccessException {
         return new ResponseEntity<>(apiService.getProductList(productFilter), HttpStatus.OK);
     }
-
-    @GetMapping("/get-order-list/{type}")
-    public ResponseEntity<List<Order>> getOrderList(@PathVariable String type) throws IllegalAccessException {
-        return new ResponseEntity<>(apiService.getOrderList(type), HttpStatus.OK);
-    }
-
-
-
 
 }

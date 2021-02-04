@@ -14,5 +14,5 @@ import java.util.List;
 public interface ApiService {
     ProductList getProductList(List<ProductFilter> productFilter) throws IllegalAccessException;
 
-    List<Order> getOrderList(String type);
+
 }

@@ -13,5 +13,5 @@ import java.util.List;
 public interface ApiRepository {
     List<Product> getProductList(List<ProductFilter> productFilter);
 
-    List<Order> getOrderList(String type);
+
 }
