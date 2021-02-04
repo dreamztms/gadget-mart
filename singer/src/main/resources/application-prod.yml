@@ -1,0 +1,10 @@
+application:
+  datasource:
+    abacus:
+      url: jdbc:mysql://localhost:3306/singer
+      username: root
+      password:
+
+
+
+

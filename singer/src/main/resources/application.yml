@@ -1,0 +1,34 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: singer-ms
+
+
+logging:
+  level:
+    root: info
+    org:
+      springframework:
+        web: info
+
+
+server:
+  port: 7044
+  context-path: /api
+
+
+eureka:
+    instance:
+        instanceId: softlogic-ms
+        metadata-map:
+            management:
+                context-path: /api/management
+        health-check-url-path: /api/management/health
+
+management:
+    context-path: /management
+
+security:
+  basic:
+    enabled: false
