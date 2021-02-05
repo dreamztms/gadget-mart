@@ -12,7 +12,9 @@ import org.springframework.jdbc.core.namedparam.NamedParameterJdbcTemplate;
 import org.springframework.web.client.RestTemplate;
 
 import javax.sql.DataSource;
-
+/**
+ * @author thilinamullewidane
+ */
 @Configuration
 public class DataSourceConfiguration {
 

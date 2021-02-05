@@ -12,14 +12,16 @@
   "private": true,
   "dependencies": {
     "@angular/animations": "~10.2.0",
-    "@angular/common": "~10.2.0",
+    "@angular/common": "^10.2.4",
     "@angular/compiler": "~10.2.0",
     "@angular/core": "~10.2.0",
     "@angular/forms": "~10.2.0",
     "@angular/platform-browser": "~10.2.0",
     "@angular/platform-browser-dynamic": "~10.2.0",
     "@angular/router": "~10.2.0",
-    "rxjs": "~6.6.0",
+    "jquery": "^3.5.1",
+    "nivo-slider": "^3.2.0",
+    "rxjs": "^6.6.3",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
   },

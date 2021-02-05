@@ -1,7 +1,9 @@
 package com.gadgetmart.config;
 
 import lombok.Data;
-
+/**
+ * @author thilinamullewidane
+ */
 @Data
 public abstract class AbstractDbProperties {
     private String url;

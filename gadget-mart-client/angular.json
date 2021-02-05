@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "gadget-mart-client"
+    }
+  },
+  "defaultProject": "gadget-mart-client",
+  "cli": {
+    "analytics": "b69959a4-83a5-43c3-b9a2-746c779d39c9"
+  }
 }
