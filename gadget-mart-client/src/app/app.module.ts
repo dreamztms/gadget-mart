@@ -9,6 +9,11 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ShopComponent } from './shop/shop.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CommonModule } from '@angular/common';
+import { FormsModule } from '@angular/forms';
+import { CartService } from './service/cart.service';
+import { SeeCartComponent } from './see-cart/see-cart.component';
 
 @NgModule({
   declarations: [
@@ -17,14 +22,18 @@ import { HttpClientModule } from '@angular/common/http';
     HomeComponent,
     ContactUsComponent,
     AboutUsComponent,
-    ShopComponent
+    ShopComponent,
+    ProductDetailComponent,
+    SeeCartComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    CommonModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}

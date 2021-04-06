@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { CartService } from '../service/cart.service';
 
 @Component({
   selector: 'app-dashboard',
@@ -8,7 +9,8 @@ import { Router } from '@angular/router';
 })
 export class FullLayoutComponent implements OnInit {
   showSlider = false;
-  constructor(public router: Router) {
+  cartItem = [];
+  constructor(public router: Router, public cartService: CartService) {
     if (this.router.url == '/') {
       this.showSlider = true;
     }
@@ -18,5 +20,9 @@ export class FullLayoutComponent implements OnInit {
     if (this.router.url == '/') {
       this.showSlider = true;
     }
+  }
+
+  checkout() {
+    
   }
 }
