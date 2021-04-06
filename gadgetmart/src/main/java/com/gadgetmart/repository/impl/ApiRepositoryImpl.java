@@ -30,7 +30,7 @@ public class ApiRepositoryImpl implements ApiRepository {
                 Collections.emptyMap(),
                 (rs, i) -> {
                     Product product = new Product();
-                    product.setProductId(rs.getInt("PRODUCT_ID"));
+                    product.setProductId(rs.getString("PRODUCT_ID"));
 
 
                     return product;
